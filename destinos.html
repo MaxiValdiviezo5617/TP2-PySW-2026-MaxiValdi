@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Destinos</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Destinos Turísticos</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="destinos.html">Destinos</a></li>
+                <li><a href="agencias.html">Agencias</a></li>
+                <li><a href="precios.html">Precios</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <h2>Explorá nuestros destinos</h2>
+
+        <div class="contenedor-filtros">
+
+            <!-- INPUTS -->
+            <input type="radio" name="categoria" id="todos" checked>
+            <input type="radio" name="categoria" id="cultural">
+            <input type="radio" name="categoria" id="naturaleza">
+            <input type="radio" name="categoria" id="gastronomico">
+
+            <!-- FILTROS -->
+            <div class="filtros">
+                <label for="todos">Todos</label>
+                <label for="cultural">Cultural</label>
+                <label for="naturaleza">Naturaleza</label>
+                <label for="gastronomico">Gastronómico</label>
+            </div>
+
+            <!-- GALERIA -->
+            <div class="galeria">
+
+                <div class="item naturaleza">
+                    <img src="img/destinos/salinas.jpg">
+                    <div class="overlay">
+                        <h3>Salinas Grandes</h3>
+                    </div>
+                </div>
+
+                <div class="item naturaleza">
+                    <img src="img/destinos/cerro.jpg">
+                    <div class="overlay">
+                        <h3>Cerro de los 7 colores</h3>
+                    </div>
+                </div>
+
+                <div class="item cultural">
+                    <img src="img/destinos/iglesia.jpg">
+                    <div class="overlay">
+                        <h3>Iglesia Colonial</h3>
+                    </div>
+                </div>
+
+                <div class="item gastronomico">
+                    <img src="img/destinos/comida.jpg">
+                    <div class="overlay">
+                        <h3>Comida Regional</h3>
+                    </div>
+                </div>
+
+                <div class="item cultural">
+                    <img src="img/destinos/museo.jpg">
+                    <div class="overlay">
+                        <h3>Museo Histórico</h3>
+                    </div>
+                </div>
+
+                <div class="item naturaleza">
+                    <img src="img/destinos/quebrada.jpg">
+                    <div class="overlay">
+                        <h3>Quebrada de Humahuaca</h3>
+                    </div>
+                </div>
+                            <div class="item gastronomico">
+                    <img src="img/destinos/comida2.jpg">
+                    <div class="overlay">
+                        <h3>Comida Regional</h3>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- TABLA -->
+        <section class="tabla-precios">
+            <h2>Precios de Destinos</h2>
+
+            <div class="tabla-contenedor">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Destino</th>
+                            <th>Precio</th>
+                            <th>Duración</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Salinas Grandes</td>
+                            <td>$10.000</td>
+                            <td>1 día</td>
+                        </tr>
+                        <tr>
+                            <td>Cerro 7 Colores</td>
+                            <td>$8.000</td>
+                            <td>Medio día</td>
+                        </tr>
+                        <tr>
+                            <td>Quebrada</td>
+                            <td>$12.000</td>
+                            <td>2 días</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="footer-contenido">
+
+            <!-- NEWSLETTER -->
+            <div class="newsletter">
+                <h3>Suscribite</h3>
+                <form>
+                    <input type="email" placeholder="Tu email" required>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+
+            <!-- REDES -->
+            <div class="redes">
+                <h3>Seguinos</h3>
+                <p>Facebook | Instagram | Twitter</p>
+            </div>
+
+            <!-- MAPA -->
+            <div class="mapa">
+                <h3>Ubicación</h3>
+                <iframe src="https://www.google.com/maps?q=Jujuy&output=embed"></iframe>
+            </div>
+
+        </div>
+
+        <p class="copy">© 2026 Turismo Jujuy</p>
+
+    </footer>
+
+</body>
+</html>

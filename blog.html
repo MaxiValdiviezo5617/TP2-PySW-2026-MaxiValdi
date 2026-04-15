@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Blog de viajes</h1>
+
+        <!-- NAV -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="destinos.html">Destinos</a></li>
+                <li><a href="agencias.html">Agencias</a></li>
+                <li><a href="precios.html">Precios</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+<main>
+
+<h2>Experiencias en Jujuy</h2>
+
+<div class="contenedor-blog">
+
+    <!-- FILTROS -->
+    <input type="radio" name="filtro" id="todos" checked>
+    <input type="radio" name="filtro" id="naturaleza">
+    <input type="radio" name="filtro" id="cultura">
+
+    <!-- TAGS -->
+    <div class="tags">
+        <label for="todos">Todos</label>
+        <label for="naturaleza">Naturaleza</label>
+        <label for="cultura">Cultura</label>
+    </div>
+
+    <!-- GRID NEWSPAPER -->
+    <div class="grid-blog">
+
+        <!-- DESTACADO (CLAVE 🔥) -->
+        <article class="post grande naturaleza reveal">
+            <img src="img/destinos/salinas.jpg" alt="">
+            <h3>Salinas Grandes</h3>
+            <p>Paisajes únicos del norte argentino...</p>
+        </article>
+
+        <article class="post cultura reveal">
+            <img src="img/destinos/fiesta.jpg" alt="">
+            <h3>Fiestas tradicionales</h3>
+            <p>Costumbres llenas de historia...</p>
+        </article>
+
+        <article class="post naturaleza reveal">
+            <img src="img/destinos/cerro.jpg" alt="">
+            <h3>Cerro de los 7 colores</h3>
+            <p>Un espectáculo natural...</p>
+        </article>
+
+        <article class="post cultura reveal">
+            <img src="img/destinos/iglesia2.jpg" alt="">
+            <h3>Iglesias del norte</h3>
+            <p>Arquitectura histórica y cultural.</p>
+        </article>
+
+        <article class="post naturaleza reveal">
+            <img src="img/destinos/laquiaca.jpg" alt="">
+            <h3>La Quiaca</h3>
+            <p>El punto más al norte del país.</p>
+        </article>
+
+        <article class="post cultura reveal">
+            <img src="img/destinos/feria.jpg" alt="">
+            <h3>Ferias artesanales</h3>
+            <p>Productos únicos hechos por manos locales.</p>
+        </article>
+
+    </div>
+
+</div>
+
+<!-- COMENTARIOS MEJORADOS -->
+<section class="comentarios">
+
+    <h2>Comentarios</h2>
+
+    <div class="comentario">
+        <div class="avatar"></div>
+        <div class="contenido">
+            <strong>Maxi</strong>
+            <p>Hermoso lugar, lo recomiendo!</p>
+        </div>
+    </div>
+
+    <div class="comentario">
+        <div class="avatar"></div>
+        <div class="contenido">
+            <strong>Ana</strong>
+            <p>Una experiencia increíble!</p>
+        </div>
+    </div>
+
+</section>
+
+</main>
+
+    <footer class="footer">
+
+        <div class="footer-contenido">
+
+            <!-- NEWSLETTER -->
+            <div class="newsletter">
+                <h3>Suscribite</h3>
+                <form>
+                    <input type="email" placeholder="Tu email" required>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+
+            <!-- REDES -->
+            <div class="redes">
+                <h3>Seguinos</h3>
+                <p>Facebook | Instagram | Twitter</p>
+            </div>
+
+            <!-- MAPA -->
+            <div class="mapa">
+                <h3>Ubicación</h3>
+                <iframe src="https://www.google.com/maps?q=Jujuy&output=embed"></iframe>
+            </div>
+
+        </div>
+
+        <p class="copy">© 2026 Turismo Jujuy</p>
+
+    </footer>
+>
+
+<script src="js/blog.js"></script>
+
+</body>
+</html>

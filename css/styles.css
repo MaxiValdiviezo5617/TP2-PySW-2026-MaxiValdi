@@ -1,0 +1,838 @@
+/* RESET BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* HEADER */
+header {
+    background-color: #1e3a5f;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* NAV */
+nav ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* HOVER EN MENU */
+nav ul li a:hover {
+    color: #00bcd4;
+}
+
+/* MAIN */
+main {
+    padding: 20px;
+}
+
+/* SECCIONES */
+section {
+    margin-bottom: 40px;
+}
+
+/* TARJETAS (DESTINOS) */
+article {
+    background-color: white;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+
+/* FOOTER */
+footer {
+    background-color: #1e3a5f;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* HERO */
+/* HERO */
+.hero {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+}
+
+/* VIDEO DE FONDO */
+.video-fondo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+
+/* OVERLAY */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0,0,0,0.5);
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* TEXTO */
+.overlay h2 {
+    font-size: 40px;
+}
+
+.overlay p {
+    font-size: 20px;
+}
+
+/* DESTINOS */
+.destinos h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* CONTENEDOR DE CARDS */
+.cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* CARD */
+.card {
+    width: 250px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* IMAGEN */
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* CONTENIDO */
+.card-content {
+    padding: 15px;
+    text-align: center;
+}
+
+/* EFECTO HOVER 🔥 */
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* CONTADOR */
+.contador {
+    display: flex;
+    justify-content: space-around;
+    background-color: #00bcd4;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+/* ITEMS */
+.contador-item h2 {
+    font-size: 40px;
+    animation: aparecer 2s ease-in-out;
+}
+
+.contador-item p {
+    font-size: 18px;
+}
+
+/* ANIMACIÓN */
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* TESTIMONIOS */
+.testimonios {
+    text-align: center;
+    margin: 50px 0;
+}
+
+/* CONTENEDOR */
+.carrusel {
+    width: 300px;
+    margin: 50px auto;
+    overflow: hidden;
+}
+
+/* SLIDES */
+.slides {
+    display: flex;
+    width: 300px;
+    animation: slide 25s infinite;
+}
+
+/* CADA TESTIMONIO */
+.slide {
+    width: 100%;
+    flex-shrink: 0;
+    padding: 30px;
+    background-color: #1e3a5f;
+    color: white;
+    border-radius: 10px;
+    font-size: 18px;
+    display: flex;
+
+}
+
+/* ANIMACIÓN */
+@keyframes slide {
+    0% { transform: translateX(0); }
+    33% { transform: translateX(-100%); }
+    66% { transform: translateX(-200%); }
+    100% { transform: translateX(0); }
+}
+
+
+/* FOOTER */
+.footer {
+    background-color: #1e3a5f;
+    color: white;
+    padding: 30px 20px;
+}
+
+/* CONTENIDO */
+.footer-contenido {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+/* COLUMNAS */
+.footer-contenido div {
+    width: 30%;
+}
+
+/* FORM */
+.newsletter input {
+    padding: 8px;
+    width: 70%;
+    border: none;
+    border-radius: 5px;
+}
+
+.newsletter button {
+    padding: 8px;
+    border: none;
+    background-color: #00bcd4;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.newsletter button:hover {
+    background-color: black;
+} 
+/* MAPA */
+.mapa iframe {
+    width: 100%;
+    height: 150px;
+    border: none;
+}
+
+/* COPY */
+.copy {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* DESTINOS */
+
+/* =========================
+   DESTINOS - FILTROS
+========================= */
+
+input[type="radio"] {
+    display: none;
+}
+
+.filtros {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.filtros label {
+    margin: 0 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* =========================
+   GALERIA GRID (MASONRY)
+========================= */
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 20px;
+}
+
+/* ITEM */
+.item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+/* IMAGEN */
+.item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+/* OVERLAY */
+.overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    transition: background 0.3s;
+}
+
+/* HOVER ZOOM */
+.item:hover img {
+    transform: scale(1.1);
+}
+
+.item:hover .overlay {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+/* =========================
+   EFECTO MASONRY
+========================= */
+
+.item:nth-child(1),
+.item:nth-child(3),
+.item:nth-child(6) {
+    grid-row: span 2;
+}
+
+/* =========================
+   FILTROS FUNCIONANDO
+========================= */
+
+#cultural:checked ~ .galeria .item:not(.cultural) {
+    display: none;
+}
+
+#naturaleza:checked ~ .galeria .item:not(.naturaleza) {
+    display: none;
+}
+
+#gastronomico:checked ~ .galeria .item:not(.gastronomico) {
+    display: none;
+}
+
+#todos:checked ~ .galeria .item {
+    display: block;
+}
+
+/* =========================
+   TABLA DE PRECIOS
+========================= */
+
+.tabla-precios {
+    padding: 20px;
+}
+
+.tabla-precios h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+th {
+    background-color: #1e3a5f;
+    color: white;
+}
+
+/* HOVER EN FILAS */
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+.tabla-contenedor {
+    overflow-x: auto;
+}
+@media (max-width: 600px) {
+    table {
+        font-size: 12px;
+    }
+}
+
+
+/* Agencias */
+/* CONTENEDOR */
+.agencias {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 40px;
+}
+
+/* CARD */
+.card-agencia {
+    width: 200px;
+    height: 250px;
+    perspective: 1000px;
+}
+
+/* INTERIOR */
+.card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+/* EFECTO FLIP 🔥 */
+.card-agencia:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+/* CARAS */
+.card-front,
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* FRENTE */
+.card-front {
+    background-color: #00bcd4;
+    color: white;
+}
+
+/* ATRÁS */
+.card-back {
+    background-color: #1e3a5f;
+    color: white;
+    transform: rotateY(180deg);
+    flex-direction: column;
+}
+
+/* ESTRELLAS */
+.estrellas {
+    margin-top: 10px;
+    font-size: 20px;
+    color: gold;
+    animation: brillo 1.5s infinite alternate;
+}
+
+/* ANIMACIÓN */
+@keyframes brillo {
+    from {
+        opacity: 0.5;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+
+/*Contacto*/ 
+/* =========================
+   FORMULARIO
+========================= */
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 40px auto;
+    gap: 10px;
+}
+
+.formulario input,
+.formulario textarea {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+/* FOCUS */
+.formulario input:focus,
+.formulario textarea:focus {
+    border-color: #00bcd4;
+    outline: none;
+}
+
+/* VALIDACIÓN */
+input:valid, textarea:valid {
+    border-color: green;
+}
+
+input:invalid, textarea:invalid {
+    border-color: red;
+}
+
+/* BOTÓN */
+button {
+    padding: 10px;
+    background-color: #00bcd4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* =========================
+   SPINNER
+========================= */
+
+.spinner {
+    display: none;
+    width: 30px;
+    height: 30px;
+    border: 4px solid #ccc;
+    border-top: 4px solid #00bcd4;
+    border-radius: 50%;
+    margin: 10px auto;
+    animation: girar 1s linear infinite;
+}
+
+@keyframes girar {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* =========================
+   MODAL
+========================= */
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0,0,0,0.6);
+
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-contenido {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+
+
+/* TABLA */
+.tabla-precios {
+    padding: 20px;
+}
+
+.tabla-precios h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+th {
+    background-color: #1e3a5f;
+    color: white;
+}
+
+/* HOVER */
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* =========================
+   TOOLTIP 
+========================= */
+
+.tooltip {
+    position: relative;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* TEXTO OCULTO */
+.tooltip-text {
+    display: none;
+    position: absolute;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* MOSTRAR */
+.tooltip:hover .tooltip-text {
+    display: block;
+}
+
+
+/*BLOGGG*/
+
+/* =========================
+   CONTENEDOR GENERAL
+========================= */
+
+.contenedor-blog {
+    width: 90%;
+    margin: auto;
+}
+
+/* =========================
+   TAGS / FILTROS
+========================= */
+
+input[type="radio"] {
+    display: none;
+}
+
+.tags {
+    text-align: center;
+    margin: 20px;
+}
+
+.tags label {
+    background: #eee;
+    padding: 8px 15px;
+    border-radius: 20px;
+    margin: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.tags label:hover {
+    background: #00bcd4;
+    color: white;
+}
+
+/* =========================
+   GRID NEWSPAPER
+========================= */
+
+.grid-blog {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 15px;
+}
+
+/* POSTS */
+.post {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+/* EFECTO HOVER */
+.post:hover {
+    transform: scale(1.02);
+}
+
+/* IMÁGENES */
+.post img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+.post {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+/* TEXTO */
+.post h3 {
+    padding: 5px 10px;
+}
+
+.post p {
+    padding: 0 10px 10px;
+     font-size: 14px;
+}
+
+/* POST DESTACADO */
+.post.grande {
+    grid-row: span 2;
+}
+.post.grande img {
+    height: 250px;
+}
+
+/* =========================
+   FILTROS FUNCIONANDO
+========================= */
+
+#naturaleza:checked ~ .grid-blog .post:not(.naturaleza) {
+    display: none;
+}
+
+#cultura:checked ~ .grid-blog .post:not(.cultura) {
+    display: none;
+}
+
+/* =========================
+   COMENTARIOS
+========================= */
+
+.comentarios {
+    padding: 20px;
+}
+
+.comentario {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+
+/* TEXTO COMENTARIO */
+.contenido strong {
+    display: block;
+}
+
+/* =========================
+   AVATAR CON PSEUDO-ELEMENTOS 🔥
+========================= */
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    background: #00bcd4;
+    border-radius: 50%;
+    position: relative;
+    margin-right: 10px;
+}
+
+/* CABEZA */
+.avatar::before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* CUERPO */
+.avatar::after {
+    content: "";
+    width: 20px;
+    height: 10px;
+    background: white;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 6px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* =========================
+   SCROLL REVEAL
+========================= */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 0.6s;
+}
+
+.reveal.activo {
+    opacity: 1;
+    transform: translateY(0);
+}

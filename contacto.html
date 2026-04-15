@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Contacto</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="destinos.html">Destinos</a></li>
+            <li><a href="agencias.html">Agencias</a></li>
+            <li><a href="precios.html">Precios</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <h2>Contactanos</h2>
+
+    <form class="formulario">
+
+        <input type="text" placeholder="Nombre" required>
+        <input type="text" placeholder="Apellido" required>
+        <input type="email" placeholder="Email" required>
+        <input type="text" placeholder="Asunto" required>
+
+        <textarea placeholder="Mensaje" required></textarea>
+
+        <button type="submit">Enviar</button>
+
+        <!-- SPINNER -->
+        <div class="spinner"></div>
+
+    </form>
+
+</main>
+
+<!-- MODAL -->
+<div id="modal" class="modal">
+    <div class="modal-contenido">
+        <p>¡Mensaje enviado correctamente!</p>
+        <button onclick="cerrarModal()">Cerrar</button>
+    </div>
+</div>
+    <footer class="footer">
+
+        <div class="footer-contenido">
+
+            <!-- NEWSLETTER -->
+            <div class="newsletter">
+                <h3>Suscribite</h3>
+                <form>
+                    <input type="email" placeholder="Tu email" required>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+
+            <!-- REDES -->
+            <div class="redes">
+                <h3>Seguinos</h3>
+                <p>Facebook | Instagram | Twitter</p>
+            </div>
+
+            <!-- MAPA -->
+            <div class="mapa">
+                <h3>Ubicación</h3>
+                <iframe src="https://www.google.com/maps?q=Jujuy&output=embed"></iframe>
+            </div>
+
+        </div>
+
+        <p class="copy">© 2026 Turismo Jujuy</p>
+
+    </footer>
+<!-- JS -->
+<script src="js/contacto.js"></script>
+
+</body>
+</html>
